@@ -21,14 +21,19 @@ const BlogIndex = ({ data }, location) => {
         title="Posts"
         keywords={[`devlog`, `blog`, `gatsby`, `javascript`, `react`]}
       />
-      {/* <Bio /> */}
       {data.site.siteMetadata.description && (
         <header className="page-head">
           <h2 className="page-head-title">
             {data.site.siteMetadata.description}
           </h2>
+          <div style={indexStatsDiv}>
+            <span className="index-stats">Days: 0</span>
+            <span className="index-stats">Minutes: 0</span>
+            <span className="index-stats">Drawings: 0</span>
+          </div>
         </header>
       )}
+
       <div className="post-feed">
         {posts.map(({ node }) => {
           postCounter++
@@ -54,7 +59,9 @@ const indexQuery = graphql`
         description
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+      filter: {frontmatter: {published: {eq: true}}},
+      sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
           excerpt
@@ -66,6 +73,8 @@ const indexQuery = graphql`
             title
             description
             tags
+            minutes
+            total_minutes_to_date
             thumbnail {
               childImageSharp {
                 fluid(maxWidth: 1360) {
@@ -88,3 +97,11 @@ export default props => (
     )}
   />
 )
+
+
+
+const indexStatsDiv = {
+  display: 'flex',
+  width: '100%',
+  justifyContent: 'space-between'
+}

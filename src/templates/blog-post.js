@@ -6,6 +6,8 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 class BlogPostTemplate extends React.Component {
+  debugger
+
   render() {
     const post = this.props.data.markdownRemark
     const siteTitle = this.props.data.site.siteMetadata.title
@@ -24,9 +26,9 @@ class BlogPostTemplate extends React.Component {
           </header>
 
           {post.frontmatter.description && (
-            <p class="post-content-excerpt">{post.frontmatter.description}</p>
+            <p className="post-content-excerpt">{post.frontmatter.description}</p>
           )}
-          
+
           {post.frontmatter.thumbnail && (
             <div className="post-content-image">
               <Img
@@ -41,6 +43,16 @@ class BlogPostTemplate extends React.Component {
             className="post-content-body"
             dangerouslySetInnerHTML={{ __html: post.html }}
           />
+
+          <div className="post-stats-div">
+            {post.frontmatter.total_minutes_to_date && (
+              <p className="post-content-body post-stats-body">Minutes to Date: {post.frontmatter.total_minutes_to_date}</p>
+            )}
+
+            {post.frontmatter.minutes && (
+              <p className="post-content-body post-stats-body">Minutes: {post.frontmatter.minutes}</p>
+            )}
+          </div>
 
           <footer className="post-content-footer">
             {/* There are two options for how we display the byline/author-info.
@@ -70,6 +82,8 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
+        total_minutes_to_date
+        minutes
         date(formatString: "MMMM DD, YYYY")
         description
         thumbnail {

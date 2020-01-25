@@ -1,7 +1,7 @@
 module.exports = {
   name: 'Ruz bih Ruz',
   shortName: 'RbR',
-  description: 'A study in developing artisitic capacities',
+  description: 'Watch me learn to draw',
   url: 'https://ruzbihruz.com', // Domain of your site without prefix!
   prefix: '/',
   author: 'Eddie Glenn',
