@@ -6,10 +6,7 @@ const Header = props => {
   return (
     <header className="site-head">
       <div className="site-head-container">
-        <a
-          className="nav-burger"
-          onClick={() => setToggleNav(!toggleNav)}
-        >
+        <a className="nav-burger" onClick={() => setToggleNav(!toggleNav)}>
           <div
             className="hamburger hamburger--collapse"
             aria-label="Menu"

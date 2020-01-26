@@ -17,7 +17,9 @@ const AboutPage = ({ data }, location) => {
 
       <article className="post-content page-template no-image">
         <div className="post-content-body">
-          <h2 id="about-header">About</h2>
+          <h2 id="about-header" class="about-header">
+            About
+          </h2>
           <p>
             I am drawing every day for a year and sharing some of my work along
             the way.
@@ -25,13 +27,13 @@ const AboutPage = ({ data }, location) => {
           <p>
             This is not about exhibiting artisitic talent. As is clear from my
             inagural self-portrait, I did not start this project with much
-            talent to speak of. This is more like performance art so others can
-            see, in real time, what dedicated practice can produce.
+            talent to speak of. This is about documenting the learning process.
+            So we can see, in real time, what dedicated practice can produce.
           </p>
           <p>
             With every drawing I present here, I'll also share meticulous
             records of the time and attention I invest in developing this new
-            skill. Together we can watch how fast a new skill can grow.
+            skill. We can watch if and how skill can grow.
           </p>
           <p>
             I see this as an experiment specifically in what it takes to learn
@@ -39,16 +41,7 @@ const AboutPage = ({ data }, location) => {
             develop spiritual capacities like beauty, meditation, and artistic
             talents.
           </p>
-          <p>I hope you'll reach out or at least come along for the ride.</p>
-          <h3 id="faqs-header">FAQs</h3>
-          <p>
-            The name <b>"Ruz by Ruz"</b> (<em>"day by day"</em> in Persian, روز
-            به روز) comes is drawn from a quote by an 18th Century spiritual
-            leader named 'Abdu'l-Bahá. Legend has it that when 'Abdu'l-Bahá's
-            followers asked him how one could achieve feats of great spiritual
-            significance, He would respond simply, "cam cam, ruz bih ruz" --
-            "little by little, day by day".
-          </p>
+          <p>I hope you'll reach out or come along for the ride.</p>
           <h3 id="contact-header">Contat</h3>
           <div style={socialDiv}>
             <a style={socialLinks} href="https://twitter.com/eddiegdotme/">
@@ -58,6 +51,14 @@ const AboutPage = ({ data }, location) => {
               ig @eddiegdotme
             </a>
           </div>
+          <h3 id="faqs-header">FAQs</h3>
+          <p>
+            The name <b>"Ruz by Ruz"</b> (Persian for <em>"Day by Day"</em>, روز
+            به روز) comes from a 19th Century spiritual leader named '
+            Abdu'l-Bahá. When his followers asked him how one could achieve
+            feats of great spiritual significance, he sometimes responded
+            simply, "cam cam, ruz bih ruz" -- "little by little, day by day".
+          </p>
         </div>
       </article>
     </Layout>

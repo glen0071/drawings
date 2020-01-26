@@ -1,11 +1,11 @@
 {
-  "name": "gatsby-london-after-midnight",
+  "name": "ruz-bih-ruz",
   "private": true,
-  "description": "A custom, image-centric theme for Gatsby",
-  "version": "1.0.2",
-  "author": "Vaporwavy <i@ttv8.me> (https://vaporwavy.io)",
+  "description": "A blog about how I learned to draw",
+  "version": "1.",
+  "author": "Eddie",
   "bugs": {
-    "url": "https://github.com/vaporwavy/gatsby-london-after-midnight/issues"
+    "url": "https://ruzbihruz.com"
   },
   "dependencies": {
     "gatsby": "^2.4.2",
@@ -46,7 +46,7 @@
     "prettier": "^1.17.0",
     "pretty-quick": "^1.10.0"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://ruzbihruz.com",
   "keywords": [
     "gatsby",
     "ghost",
@@ -57,8 +57,7 @@
   "license": "MIT",
   "main": "n/a",
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/vaporwavy/gatsby-london-after-midnight.git"
+    "type": "git"
   },
   "scripts": {
     "build": "gatsby build",

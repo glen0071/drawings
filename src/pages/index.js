@@ -3,13 +3,11 @@ import { graphql, StaticQuery } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-// import Bio from "../components/bio"
 import PostCard from "../components/postCard"
 
-// import "../utils/global.scss"
+import "../utils/global.scss"
 import "../utils/normalize.css"
 import "../utils/css/screen.css"
-//TODO: switch to staticQuery, get rid of comments, remove unnecessary components, export as draft template
 const BlogIndex = ({ data }, location) => {
   const siteTitle = data.site.siteMetadata.title
   const posts = data.allMarkdownRemark.edges
@@ -18,7 +16,7 @@ const BlogIndex = ({ data }, location) => {
   return (
     <Layout title={siteTitle}>
       <SEO
-        title="Posts"
+        title="Home"
         keywords={[`devlog`, `blog`, `gatsby`, `javascript`, `react`]}
       />
       {data.site.siteMetadata.description && (
@@ -60,8 +58,9 @@ const indexQuery = graphql`
       }
     }
     allMarkdownRemark(
-      filter: {frontmatter: {published: {eq: true}}},
-      sort: { fields: [frontmatter___date], order: DESC }) {
+      filter: { frontmatter: { published: { eq: true } } }
+      sort: { fields: [frontmatter___date], order: DESC }
+    ) {
       edges {
         node {
           excerpt
@@ -98,10 +97,8 @@ export default props => (
   />
 )
 
-
-
 const indexStatsDiv = {
-  display: 'flex',
-  width: '100%',
-  justifyContent: 'space-between'
+  display: "flex",
+  width: "100%",
+  justifyContent: "space-between",
 }

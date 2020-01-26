@@ -26,7 +26,9 @@ class BlogPostTemplate extends React.Component {
           </header>
 
           {post.frontmatter.description && (
-            <p className="post-content-excerpt">{post.frontmatter.description}</p>
+            <p className="post-content-excerpt">
+              {post.frontmatter.description}
+            </p>
           )}
 
           {post.frontmatter.thumbnail && (
@@ -46,11 +48,15 @@ class BlogPostTemplate extends React.Component {
 
           <div className="post-stats-div">
             {post.frontmatter.total_minutes_to_date && (
-              <p className="post-content-body post-stats-body">Minutes to Date: {post.frontmatter.total_minutes_to_date}</p>
+              <p className="post-content-body post-stats-body">
+                Minutes to Date: {post.frontmatter.total_minutes_to_date}
+              </p>
             )}
 
             {post.frontmatter.minutes && (
-              <p className="post-content-body post-stats-body">Minutes: {post.frontmatter.minutes}</p>
+              <p className="post-content-body post-stats-body">
+                Minutes: {post.frontmatter.minutes}
+              </p>
             )}
           </div>
 

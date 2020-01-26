@@ -366,8 +366,9 @@ const ElementsPage = ({ data }, location) => {
               i = <span style={{ color: "rgb(191,90,242)" }}>0</span>;{"\n"}
               {"\n"}
               <span style={{ color: "rgb(10,132,255)" }}>while</span> (!deck.
-              <span style={{ color: "rgb(255,214,10)" }}>isInOrder</span>()){" "}
-              {"{"}
+              <span style={{ color: "rgb(255,214,10)" }}>
+                isInOrder
+              </span>()) {"{"}
               {"\n"}
               {"    "}print{" "}
               <span style={{ color: "rgb(50,215,75)" }}>'Iteration '</span> + i;
