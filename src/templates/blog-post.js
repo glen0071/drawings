@@ -47,25 +47,24 @@ class BlogPostTemplate extends React.Component {
           />
 
           <div className="post-stats-div">
+            {post.frontmatter.minutes && (
+              <p className="post-content-body post-stats-body">
+                Minutes on this work: {post.frontmatter.minutes}
+              </p>
+            )}
+
             {post.frontmatter.total_minutes_to_date && (
               <p className="post-content-body post-stats-body">
                 Minutes to Date: {post.frontmatter.total_minutes_to_date}
               </p>
             )}
 
-            {post.frontmatter.minutes && (
+            {post.frontmatter.drawings_to_date && (
               <p className="post-content-body post-stats-body">
-                Minutes: {post.frontmatter.minutes}
+                Drawings to Date: {post.frontmatter.drawings_to_date}
               </p>
             )}
           </div>
-
-          <footer className="post-content-footer">
-            {/* There are two options for how we display the byline/author-info.
-        If the post has more than one author, we load a specific template
-        from includes/byline-multiple.hbs, otherwise, we just use the
-        default byline. */}
-          </footer>
         </article>
       </Layout>
     )
@@ -89,6 +88,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         total_minutes_to_date
+        drawings_to_date
         minutes
         date(formatString: "MMMM DD, YYYY")
         description

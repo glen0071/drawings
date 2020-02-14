@@ -4,14 +4,20 @@ import { graphql, StaticQuery } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import PostCard from "../components/postCard"
+import moment from 'moment'
 
-import "../utils/global.scss"
 import "../utils/normalize.css"
 import "../utils/css/screen.css"
+
+const DaysElapsed = () => {
+  return (moment("20200206", "YYYYMMDD").fromNow('days').match(/\d+/)[0])
+}
+
 const BlogIndex = ({ data }, location) => {
   const siteTitle = data.site.siteMetadata.title
   const posts = data.allMarkdownRemark.edges
   let postCounter = 0
+  const today = 10
 
   return (
     <Layout title={siteTitle}>
@@ -25,9 +31,9 @@ const BlogIndex = ({ data }, location) => {
             {data.site.siteMetadata.description}
           </h2>
           <div style={indexStatsDiv}>
-            <span className="index-stats">Days: 0</span>
-            <span className="index-stats">Minutes: 0</span>
-            <span className="index-stats">Drawings: 0</span>
+            <span className="index-stats">Days: <DaysElapsed />+</span>
+            <span className="index-stats">Hours: 8+</span>
+            <span className="index-stats">Drawings: 29+</span>
           </div>
         </header>
       )}
@@ -74,6 +80,7 @@ const indexQuery = graphql`
             tags
             minutes
             total_minutes_to_date
+            drawings_to_date
             thumbnail {
               childImageSharp {
                 fluid(maxWidth: 1360) {
