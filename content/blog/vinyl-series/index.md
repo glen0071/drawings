@@ -12,7 +12,7 @@ tags: ['vinyl']
 
 In my sporadic research of other drawers and artists I found an illustrator who
 wanted to discipline himself as an artist by spending 1 year doing the same thing
-everyday, refining his craft and his ideas. So he draw a ![White Ibis cartoon](http://www.struthless.com/prints) every day for a year.
+everyday, refining his craft and his ideas. So he draw a ![White Ibis cartoon](https://www.struthless.com/prints) every day for a year.
 
 That sounded like an interesting challenge.
 
