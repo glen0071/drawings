@@ -10,18 +10,16 @@ drawings_to_date: 29
 tags: ['vinyl']
 ---
 
-In my sporadic research of other drawers and artists I found an illustrator who
+In my sporadic research of other artists I found an illustrator who
 wanted to discipline himself as an artist by spending 1 year doing the same thing
-everyday, refining his craft and his ideas. So he draw a ![White Ibis cartoon](https://www.struthless.com/prints) every day for a year.
+everyday, refining his craft and ideas. So he drew a [White Ibis cartoon](https://www.struthless.com/prints) every day for a year.
 
 That sounded like an interesting challenge.
 
 ![First Batch of Records](./first-batch-of-records.jpg)
 
-I decided to devote this year to record players. Partly because it's a easy enough
-to start with while having great potential to become more dynamic and challenging.
-But, more importantly, the first art I learned from and loved in life was rap music.
-So every time I draw a record player I feel I am homage to all those artists who
-helped make me who I am.
+I might devote some time to records or turntables. Rap music was the first art
+I had a relationship with. Every time I draw a record player I can reflect on
+the artists I grew up on.
 
 ![Second Recordplayer](./second-recordplayer.jpg)
