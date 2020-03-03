@@ -6,8 +6,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 class BlogPostTemplate extends React.Component {
-  debugger
-
   render() {
     const post = this.props.data.markdownRemark
     const siteTitle = this.props.data.site.siteMetadata.title
@@ -23,6 +21,7 @@ class BlogPostTemplate extends React.Component {
         >
           <header className="post-content-header">
             <h1 className="post-content-title">{post.frontmatter.title}</h1>
+            <h5 className="post-content-subtitle">{post.frontmatter.date}</h5>
           </header>
 
           {post.frontmatter.description && (

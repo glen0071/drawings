@@ -9,8 +9,8 @@ import "../utils/normalize.css"
 import "../utils/css/screen.css"
 
 const DaysElapsed = () => {
-  const diff = Date.now() - Date.parse('06 Feb 2020 00:00:00 GMT');
-  const days = Math.floor(diff / (1000*60*60*24))
+  const diff = Date.now() - Date.parse("06 Feb 2020 00:00:00 GMT")
+  const days = Math.floor(diff / (1000 * 60 * 60 * 24))
   return days
 }
 
@@ -32,7 +32,9 @@ const BlogIndex = ({ data }, location) => {
             {data.site.siteMetadata.description}
           </h2>
           <div style={indexStatsDiv}>
-            <span className="index-stats">Days: <DaysElapsed />+</span>
+            <span className="index-stats">
+              Days: <DaysElapsed />+
+            </span>
             <span className="index-stats">Hours: 17+</span>
             <span className="index-stats">Drawings: 61+</span>
           </div>

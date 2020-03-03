@@ -447,6 +447,7 @@ body {
   flex: 1 1 auto;
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
   position: absolute;
   top: 0;
@@ -498,6 +499,15 @@ body {
   margin: 0;
   display: inline-block;
   font-size: 3.4rem;
+  /* max-width: 70%; */
+  text-align: center;
+  transition: all 0.3s cubic-bezier(0.33, 0, 0.2, 1);
+}
+
+.post-card-date {
+  margin: 0;
+  display: inline-block;
+  font-size: 2.4rem;
   /* max-width: 70%; */
   text-align: center;
   transition: all 0.3s cubic-bezier(0.33, 0, 0.2, 1);
@@ -595,6 +605,11 @@ body {
 }
 
 .post-content-title {
+  margin: 0;
+  color: var(--color-base);
+  text-align: center;
+}
+.post-content-subtitle {
   margin: 0 0 3vw;
   color: var(--color-base);
   text-align: center;

@@ -25,8 +25,9 @@ const AboutPage = ({ data }, location) => {
           </p>
           <p>
             This blog is not about talent. I did not start this project with any
-            drawing talent to speak of. This is about observing the trajectory of
-            growth. So we can see, in real time, what dedicated practice can produce.
+            drawing talent to speak of. This is about observing the trajectory
+            of growth. So we can see, in real time, what dedicated practice can
+            produce.
           </p>
           <p>
             With every drawing I present here, I'll also share some info on the
@@ -52,10 +53,10 @@ const AboutPage = ({ data }, location) => {
           <h3 id="faqs-header">FAQs</h3>
           <p>
             The name <b>"Ruz by Ruz"</b> (Persian for <em>"Day by Day"</em>, روز
-            به روز) comes from a 19th Century spiritual leader named 'Abdu'l-Bahá.
-            When asked how one could achieve feats of great spiritual significance,
-            'Abdu'l-Bahá sometimes responded simply, "cam cam, ruz bih ruz" --
-            "little by little, day by day".
+            به روز) comes from a 19th Century spiritual leader named
+            'Abdu'l-Bahá. When asked how one could achieve feats of great
+            spiritual significance, 'Abdu'l-Bahá sometimes responded simply,
+            "cam cam, ruz bih ruz" -- "little by little, day by day".
           </p>
         </div>
       </article>

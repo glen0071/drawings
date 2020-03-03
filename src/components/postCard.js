@@ -66,6 +66,9 @@ class ContentWithImage extends Component {
           <h2 className="post-card-title">
             {props.node.frontmatter.title || props.node.fields.slug}
           </h2>
+          <h5 className="post-card-date">
+            {props.node.frontmatter.date || props.node.fields.slug}
+          </h5>
         </div>
       </Link>
     )
