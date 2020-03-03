@@ -4,13 +4,14 @@ import { graphql, StaticQuery } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import PostCard from "../components/postCard"
-import moment from 'moment'
 
 import "../utils/normalize.css"
 import "../utils/css/screen.css"
 
 const DaysElapsed = () => {
-  return (moment("20200206", "YYYYMMDD").fromNow('days').match(/\d+/)[0])
+  const diff = Date.now() - Date.parse('06 Feb 2020 00:00:00 GMT');
+  const days = Math.floor(diff / (1000*60*60*24))
+  return days
 }
 
 const BlogIndex = ({ data }, location) => {
