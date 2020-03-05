@@ -48,7 +48,7 @@ class BlogPostTemplate extends React.Component {
           <div className="post-stats-div">
             {post.frontmatter.minutes && (
               <p className="post-content-body post-stats-body">
-                Minutes on this work: {post.frontmatter.minutes}
+                Minutes on these works: {post.frontmatter.minutes}
               </p>
             )}
 
