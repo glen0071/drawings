@@ -18,8 +18,8 @@ That sounded like an interesting challenge.
 
 ![First Batch of Records](./first-batch-of-records.jpg)
 
-I might devote some time to records or turntables. Rap music was the first art
-I had a relationship with. Every time I draw a record player I can reflect on
-the artists I grew up on.
+I might devote some time to records or albums or something. Rap music was the first art
+I had a relationship with. Every time I draw a record player or album cover I can enjoy,
+reflect on, and pay homage to the music.
 
 ![Second Recordplayer](./second-recordplayer.jpg)

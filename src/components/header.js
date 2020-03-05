@@ -1,8 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-const Header = props => {
-  const [toggleNav, setToggleNav] = React.useState(false)
+const Header = ({setToggleNav, toggleNav}) => {
   return (
     <header className="site-head">
       <div className="site-head-container">
