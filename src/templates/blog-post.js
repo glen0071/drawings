@@ -48,19 +48,19 @@ class BlogPostTemplate extends React.Component {
           <div className="post-stats-div">
             {post.frontmatter.minutes && (
               <p className="post-content-body post-stats-body">
-                Minutes on these works: {post.frontmatter.minutes}
+                Minutes spent on these drawings: {post.frontmatter.minutes}
               </p>
             )}
 
             {post.frontmatter.total_minutes_to_date && (
               <p className="post-content-body post-stats-body">
-                Minutes to Date: {post.frontmatter.total_minutes_to_date}
+                Minutes spent to Date: {post.frontmatter.total_minutes_to_date}
               </p>
             )}
 
             {post.frontmatter.drawings_to_date && (
               <p className="post-content-body post-stats-body">
-                Drawings to Date: {post.frontmatter.drawings_to_date}
+                Drawings completed to Date: {post.frontmatter.drawings_to_date}
               </p>
             )}
           </div>

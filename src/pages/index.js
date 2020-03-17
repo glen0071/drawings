@@ -35,8 +35,8 @@ const BlogIndex = ({ data }, location) => {
             <span className="index-stats">
               Days: <DaysElapsed />+
             </span>
-            <span className="index-stats">Hours: 27+</span>
-            <span className="index-stats">Drawings: 133+</span>
+            <span className="index-stats">Hours: 38+</span>
+            <span className="index-stats">Drawings: 222+</span>
           </div>
         </header>
       )}

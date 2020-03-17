@@ -7,7 +7,7 @@ published: true
 minutes: 60
 total_minutes_to_date: 520
 drawings_to_date: 29
-tags: ['vinyl']
+tags: ["vinyl"]
 ---
 
 In my sporadic research of other artists I found an illustrator who
@@ -19,7 +19,7 @@ That sounded like an interesting challenge.
 ![First Batch of Records](./first-batch-of-records.jpg)
 
 I might devote some time to records or albums or something. Rap music was the first art
-I had a relationship with. Every time I draw a record player or album cover I can enjoy,
+I had a relationship with. Every time I draw a record player or album I can enjoy,
 reflect on, and pay homage to the music.
 
 ![Second Recordplayer](./second-recordplayer.jpg)
