@@ -1,6 +1,6 @@
 ---
 title: Profiles
-date: "2020-06-14"
+date: "2020-03-14"
 thumbnail: ./look-right.jpg
 description: Starting to work with color
 published: true
